@@ -145,7 +145,8 @@ class School:
         self.btnExit = Button(Button_Frame, pady=1, padx=24, bd=6, font=('arial', 10, 'bold'), width=9, text="Exit",command=self.iExit)
         self.btnExit.grid(row=1, column=4)
 
-           # =====================================Functions============================================
+           # =====================================Functions============================================#
+
     def Reset(self):
         self.StudentID.set("")
         self.Firstname.set("")
@@ -156,6 +157,7 @@ class School:
         self.DOB.set("")
         self.Mobile.set("")
         self.Email.set("")
+
 
     def iExit(self):
         iExit = tkinter.messagebox.askyesno("School Management System", "Confirm if you want to exit")
